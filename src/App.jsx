@@ -1,35 +1,67 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { useState } from 'react';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import ListaAlunos from './components/ListaAlunos';
+import TodoList from './components/TodoList';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [alertaVisivel, setAlertaVisivel] = useState(false);
+  const [contador, setContador] = useState(0);
+
+  // Função para demonstrar uso de state e evento
+  const handleClickBotao = () => {
+    setContador(contador + 1);
+    setAlertaVisivel(!alertaVisivel); // Alterna o alerta a cada clique
+  };
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="app-container" style={{ fontFamily: 'Arial, sans-serif', padding: '20px' }}>
+      <Header />
+      
+      {/* Mensagem de Boas-Vindas e Nome */}
+      <h2 style={{ color: '#000000', textAlign: 'center' }}>
+        Olá, seja bem-vindo(a) à minha mini-aplicação React! Eu sou o Gleyco, e vou te guiar nesta jornada de aprendizado.
+      </h2>
+      <hr />
+
+      <h3 style={{ color: '#000000ff' }}>Demonstração de Eventos e Estado:</h3>
+      
+      {/* Botão com Texto Mais Claro */}
+      <button 
+        onClick={handleClickBotao}
+        style={{ padding: '10px 15px', backgroundColor: '#28a745', color: 'white', border: 'none', borderRadius: '5px', cursor: 'pointer' }}
+      >
+        Clique aqui! Você já clicou {contador} {contador === 1 ? 'vez' : 'vezes'}.
+      </button>
+
+      {/* Renderização Condicional com Melhor Descrição */}
+      <div style={{ marginTop: '15px', marginBottom: '20px' }}>
+        {alertaVisivel ? (
+          <p style={{ padding: '10px', backgroundColor: '#d4edda', color: '#155724', border: '1px solid #c3e6cb', borderRadius: '4px' }}>
+            ✔️ **Alerta Verde**: O contador é **par** ou visível! Continue assim!
+          </p>
+        ) : (
+          <p style={{ padding: '10px', backgroundColor: '#f8d7da', color: '#721c24', border: '1px solid #f5c6cb', borderRadius: '4px' }}>
+            ⚠️ **Alerta Vermelho**: O contador é **ímpar** ou invisível! Vamos tentar novamente.
+          </p>
+        )}
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+
+      <hr />
+      
+      {/* Componente principal da lista de tarefas */}
+      <h3 style={{ color: '#343a40' }}>Sua Lista de Tarefas:</h3>
+      <TodoList />
+
+      <hr />
+      
+      {/* Componente da lista de alunos e cards (opcional) */}
+      <h3 style={{ color: '#343a40' }}>Lista de Alunos:</h3>
+      <ListaAlunos />
+      
+      <Footer />
+    </div>
+  );
 }
 
-export default App
+export default App;
