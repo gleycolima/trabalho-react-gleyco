@@ -1,7 +1,7 @@
 # Mini Aplicação React - To-Do List
 
 ## Trabalho da Unidade 1  
-**Disciplina:** ADS 2MA  
+**Disciplina:** Análise e Desenvolvimento de Sistemas, 2MA  
 **Professor:** Renato Freire  
 
 ---
@@ -18,7 +18,6 @@ Construir uma aplicação simples em React para gerenciar uma lista de tarefas (
 - Manipular dados usando state e eventos.
 - Aplicar renderização condicional e listas.
 - Versionar o projeto no Git/GitHub.
-- Permitir marcar as tarefas como concluídas usando quadrados em branco (checkbox).
 - Seguir as orientações básicas dos slides 5 e 6.
 
 ---
