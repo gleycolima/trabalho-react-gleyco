@@ -1,16 +1,63 @@
-# React + Vite
+# Mini Aplicação React - To-Do List
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Trabalho da Unidade 1  
+**Disciplina:** ADS 2MA  
+**Professor:** Renato Freire  
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tema  
+Construir uma aplicação simples em React para gerenciar uma lista de tarefas (To-Do List).
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Objetivos do Projeto
 
-## Expanding the ESLint configuration
+- Gerenciar uma lista de tarefas (To-Do List).
+- Utilizar componentes reutilizáveis e passagem de props.
+- Manipular dados usando state e eventos.
+- Aplicar renderização condicional e listas.
+- Versionar o projeto no Git/GitHub.
+- Permitir marcar as tarefas como concluídas usando quadrados em branco (checkbox).
+- Seguir as orientações básicas dos slides 5 e 6.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Etapas do Trabalho
+
+### 1. Preparar o ambiente  
+- Criar projeto React utilizando Vite.  
+- Inicializar repositório Git local.  
+- Criar repositório remoto no GitHub e realizar o primeiro push.  
+
+### 2. Estrutura básica do app  
+- Editar o `App.jsx` com uma mensagem de boas-vindas incluindo o seu primeiro nome.  
+- Criar o componente `Header.jsx` com o título da aplicação.  
+- Criar o componente `Footer.jsx` com o nome da disciplina e curso.  
+- Criar o componente `ListaAlunos.jsx` com uma listagem manual dos alunos (pode usar nomes gerados por IA).  
+- Adicionar botão “Você clicou” com alertas verde e vermelho para feedback visual.  
+- Adicionar botões de ações conforme necessidade.  
+- Criar cards para exibir dados e aplicar estilização básica.  
+- Atualizar o `README.md` com as informações do trabalho: nome, integrantes, matrícula e tecnologias usadas.  
+
+### 3. Funcionalidades opcionais  
+- Estilizar com CSS para melhorar a aparência.  
+- Usar criatividade para adicionar funcionalidades extras.  
+- Inserir mais dados para demonstrar domínio do código.  
+
+### 4. Versionamento com Git/GitHub  
+- Criar commits organizados e claros para cada etapa concluída.  
+- Realizar push das alterações ao final de cada dia de trabalho.  
+
+### 5. Resultado final  
+- Disponibilizar o link do repositório no GitHub com o projeto completo.  
+- Garantir que o arquivo `README.md` esteja atualizado.  
+- Incluir prints (capturas de tela) mostrando a aplicação funcionando.
+
+---
+
+## Informações do Integrante  
+
+- **Nome:** GleycoJosé de Mendonça Lima
+- **Matrícula:** 01808718 
+- **Tecnologias usadas:** React, Vite, Git, GitHub, CSS

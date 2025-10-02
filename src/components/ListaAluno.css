@@ -1,0 +1,27 @@
+.lista-alunos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .card-aluno {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    width: 250px;
+    display: inline-block;
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  .card-aluno h4 {
+    color: #000;
+    margin-top: 0;
+  }
+  
+  .card-aluno p {
+    margin: 4px 0;
+    color: #000;
+  }
+  

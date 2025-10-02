@@ -4,9 +4,10 @@ import TodoItem from './TodoItem';
 const TodoList = () => {
   // State para armazenar a lista de tarefas
   const [tarefas, setTarefas] = useState([
-    { id: 1, texto: 'Configurar o ambiente Vite/React', concluida: true },
-    { id: 2, texto: 'Fazer o primeiro commit no GitHub', concluida: false },
-    { id: 3, texto: 'Implementar a função de adicionar tarefas', concluida: false },
+    { id: 1, texto: 'Configurar o ambiente de desenvolvimento com Vite e React', concluida: true },
+    { id: 2, texto: 'Realizar o primeiro commit no repositório GitHub', concluida: false },
+    { id: 3, texto: 'Implementar a funcionalidade para adicionar novas tarefas', concluida: false },
+    { id: 4, texto: 'Criar componentes Header, Footer e ListaAlunos', concluida: false },
   ]);
   
   // State para o input de nova tarefa
